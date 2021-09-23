@@ -44,7 +44,9 @@ const login = async ({ username, password }) => {
   const loginBtn = await page.$$('.login-start');
   await loginBtn[0].click();
 
-  await page.waitForTimeout(4000);
+  await page.waitForSelector('.item', {
+    visible: true
+  });
 
   // 点击首页更多
   const itemList = await page.$$('.item');

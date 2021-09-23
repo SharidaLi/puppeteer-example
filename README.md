@@ -20,3 +20,7 @@ const users = [
 module.exports = users;
 ```
 
+
+2.  `bing`
+
+爬取 bing 每日壁纸，保存到本地
